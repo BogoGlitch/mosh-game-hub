@@ -1,3 +1,16 @@
 form {
 	width: 100%;
 }
+
+.chakra-card {
+	height: 100%;
+	.chakra-heading {
+		height: 100%;
+	}
+	.chakra-card__body,
+	.chakra-heading {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
