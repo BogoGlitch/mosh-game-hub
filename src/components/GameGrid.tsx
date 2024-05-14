@@ -22,13 +22,11 @@ const GameGrid = ({ gameQuery }: Props) => {
 						<GameCardSkeleton />
 					</GameCardContainer>
 				))}
-			{data &&
-				data.results &&
-				data?.results.map((game) => (
-					<GameCardContainer key={game.id}>
-						<GameCard game={game}></GameCard>
-					</GameCardContainer>
-				))}
+			{data?.results.map((game) => (
+				<GameCardContainer key={game.id}>
+					<GameCard game={game}></GameCard>
+				</GameCardContainer>
+			))}
 		</SimpleGrid>
 	)
 }
